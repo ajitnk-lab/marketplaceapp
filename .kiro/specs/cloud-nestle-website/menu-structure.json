@@ -1,0 +1,47 @@
+{
+  "Public Portal App": {
+    "Services": {
+      "Training": [
+        "Module",
+        "Resources (Delivery Team)",
+        "Delivery Partner"
+      ],
+      "Consulting": {
+        "Planning": [
+          "Governance",
+          "Management"
+        ],
+        "Strategy": [
+          "Discovery",
+          "Optimization",
+          "Evaluation"
+        ],
+        "Assessment": [
+          "Readiness",
+          "Mobility",
+          "Usage"
+        ]
+      }
+    },
+    "Resources": [
+      "Blogs",
+      "Events",
+      "About",
+      "Client",
+      {
+        "Community": [
+          "Case Study",
+          "Testimonial",
+          "Career"
+        ]
+      }
+    ],
+    "Marketplace": {},
+    "Offers": {},
+    "Digital Registration": {},
+    "Contact Us": [
+      "Sales",
+      "Support"
+    ]
+  }
+}
