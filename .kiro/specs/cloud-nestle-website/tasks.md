@@ -36,7 +36,9 @@ The implementation follows the phased approach from the requirements, focusing o
     - Set up AWS profile for different environments (dev/prod)
     - _Requirements: 1.1, 1.6, AWS infrastructure access_
 
-  - [ ] 0.3 Set up GitHub repository and access
+  - [x] 0.3 Set up GitHub repository and access
+
+
 
 
 
