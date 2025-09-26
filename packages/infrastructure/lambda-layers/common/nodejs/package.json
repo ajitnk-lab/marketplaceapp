@@ -1,0 +1,9 @@
+{
+  "name": "marketplace-common-layer",
+  "version": "1.0.0",
+  "description": "Common dependencies for marketplace Lambda functions",
+  "dependencies": {
+    "aws-sdk": "^2.1490.0",
+    "uuid": "^9.0.1"
+  }
+}
