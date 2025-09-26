@@ -1,0 +1,9 @@
+﻿âœ… AWS CLI: Available
+Available profiles: sandhya_AdministratorAccess, default
+âœ… Default profile: arn:aws:iam::039920874011:root
+âš ï¸  cloudnestle-dev profile: Not configured
+âœ… S3: Access granted
+âŒ CloudFormation: Access denied
+âœ… Route53: Access granted
+âœ… IAM: Access granted
+âš ï¸  No default region configured

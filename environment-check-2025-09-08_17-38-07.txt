@@ -1,0 +1,8 @@
+﻿âŒ Node.js: Not found
+âŒ npm: Not found
+âŒ Git: Not found
+âœ… AWS CLI: aws-cli/2.28.25 Python/3.13.7 Windows/10 exe/AMD64
+âŒ AWS CDK: Not found (run: npm install -g aws-cdk)
+âš ï¸  RAM: 7.85 GB (8GB recommended)
+âœ… Disk Space: 49.68 GB free
+âœ… Internet: Connected

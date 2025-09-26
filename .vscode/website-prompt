@@ -1,0 +1,7 @@
+i want you to create  a new s3 based website for my new AWS consulting and services company using amplify.
+CDK should have nested stacks and should be well architected
+use tls certificate , cloudfront , route53 hosted zoen
+i have a domain from godaddy which should poin to this clodufront endpoint
+lets work step by step. first give me structure of the website.
+ask me all relevent questions first.
+

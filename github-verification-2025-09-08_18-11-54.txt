@@ -1,0 +1,10 @@
+﻿âœ… Git: Available
+âœ… Git configured: ajitnklab <ajitnk.lab@gmail.com>
+âœ… Git repository: Initialized
+âœ… Remote origin: https://github.com/ajitnk-lab/cloudnestle-website.git
+âœ… Environment file: Found
+âœ… GitHub Owner: ajitnk-lab
+âœ… GitHub Repository: cloudnestle-website
+âœ… GitHub Token: Configured
+âŒ GitHub API: Access failed
+âœ… Git fetch: Working

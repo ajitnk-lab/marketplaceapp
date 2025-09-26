@@ -1,4 +1,35 @@
 {
   "mcpServers": {
+    "aws-knowledge-mcp-server": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://knowledge-mcp.global.api.aws"],
+      "env": {},
+      "timeout": 120000,
+      "disabled": false
+    },
+    "core-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.core-mcp-server@latest"],
+      "env": {},
+      "timeout": 120000,
+      "disabled": false
+    },
+    "aws-documentation": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": {
+        "AWS_DOCUMENTATION_PARTITION": "aws",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "timeout": 120000,
+      "disabled": false
+    },
+    "fetch-mcp-server": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "env": {},
+      "timeout": 120000,
+      "disabled": false
+    }
   }
 }

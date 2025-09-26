@@ -1,30 +1,29 @@
 # Product Overview
 
-## Cloud Nestle Consulting and Services
+## Marketplace Platform
 
-Cloud Nestle is an AWS consulting and services company focused on helping businesses migrate to and optimize their AWS infrastructure. The company targets small-to-medium businesses (SMBs) and startups with cost-effective, scalable cloud solutions.
+A comprehensive self-service online marketplace portal similar to AWS Marketplace that enables registered customers and partners to buy and sell software solutions.
 
-### Core Value Proposition
-- Professional AWS expertise for businesses of all sizes
-- Cost-effective cloud migration and optimization services
-- Scalable solutions that grow with the business
-- Industry-specific compliance and certification support
+### Core Features
 
-### Target Markets
-- **Primary**: Small-to-medium businesses (SMBs) and startups
-- **Secondary**: Enterprise clients requiring specialized AWS services
-- **Geographic**: Global reach with remote service delivery
-- **Industries**: Healthcare, finance, retail, manufacturing, and general business
+- **Customer Registration & Authentication**: Multi-method registration including social logins (Gmail, GitHub)
+- **Partner Program**: Software vendors can apply to become partners and sell solutions
+- **Solution Catalog**: Searchable catalog with flexible pricing models (upfront/subscription)
+- **Payment Processing**: Secure transactions via Instamojo supporting card and UPI payments
+- **Subscription Management**: Recurring billing and subscription lifecycle management
+- **Commission System**: Revenue sharing between marketplace owner and partners
+- **Administrative Controls**: Comprehensive admin dashboard for platform management
+- **Analytics & Reporting**: Partner dashboards with sales metrics and performance data
 
-### Business Model (Multi-Phase)
-- **Phase 1-2**: Professional services website with content marketing
-- **Phase 3+**: Freemium content model with paid subscriptions
-- **Phase 4+**: Partner/distributor network and affiliate marketing
-- **Phase 6+**: AI-powered customer support with RAG integration
-- **Phase 7+**: Full marketplace platform for AWS products and services
+### Business Model
 
-### Key Differentiators
-- SMB-focused pricing and solutions
-- Industry-specific compliance expertise
-- Transparent, startup-friendly pricing tiers
-- Global accessibility with multi-currency support
+- Commission-based revenue from transactions
+- Partners pay platform fees on sales
+- Supports both one-time purchases and recurring subscriptions
+- Monthly settlement system for partner payouts
+
+### Target Users
+
+- **Customers**: End users purchasing software solutions
+- **Partners**: Software vendors selling their products
+- **Administrators**: Platform owners managing the marketplace

@@ -1,133 +1,78 @@
-# Technology Stack & Build System
+# Technology Stack
 
-## Core Technology Stack
+## Build System & Package Management
 
-### Frontend Framework
-- **Next.js 13+** with TypeScript for static site generation and server-side rendering
-- **Tailwind CSS** for responsive, mobile-first styling
-- **React 18+** with modern hooks and component patterns
+- **Monorepo**: npm workspaces for multi-package management
+- **Node.js**: 18+ required
+- **Package Manager**: npm 9.0.0+
+- **TypeScript**: Primary language for both frontend and infrastructure
 
-### Content Management (Phase 1-2)
-- **Git-based CMS** using Markdown files stored in GitHub repository
-- **Frontmatter** for content metadata (title, date, category, tags)
-- **GitHub API integration** for admin interface content management
-- **Rich text editor** with WYSIWYG functionality for non-technical users
+## Frontend Stack
 
-### AWS Infrastructure
-- **S3** for static website hosting
-- **CloudFront** for global CDN and performance optimization
-- **Route53** for DNS management and domain configuration
-- **ACM (Certificate Manager)** for SSL/TLS certificates
-- **Lambda** for GitHub API integration and admin functions
-- **API Gateway** for REST API endpoints
-- **Systems Manager Parameter Store** for secure token storage
-- **CloudWatch** for monitoring, logging, and alerts
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite for fast development and optimized builds
+- **Styling**: Tailwind CSS with PostCSS and Autoprefixer
+- **Routing**: React Router DOM v6
+- **Forms**: React Hook Form with Zod validation and Hookform Resolvers
+- **HTTP Client**: Axios for API communication
+- **State Management**: React Query for server state
+- **Icons**: Lucide React
+- **Utilities**: clsx and tailwind-merge for conditional styling
+- **Testing**: Vitest with UI support
 
-### Infrastructure as Code
-- **AWS CDK** with TypeScript for infrastructure deployment
-- **Nested stacks** architecture for organized, maintainable code
-- **Environment-specific configurations** (dev/staging/production)
+## Infrastructure Stack
 
-### Development Tools
-- **TypeScript** for type safety and better developer experience
-- **ESLint + Prettier** for code formatting and quality
-- **Jest** for unit testing
-- **Playwright** for end-to-end testing
+- **IaC**: AWS CDK (TypeScript)
+- **Database**: DynamoDB
+- **API**: Lambda functions with API Gateway
+- **Storage**: S3 for static assets
+- **CDN**: CloudFront
+- **Testing**: Jest with ts-jest
 
-## Build System & Commands
+## Payment Integration
 
-### Development Commands
+- **Payment Gateway**: Instamojo (card and UPI support)
+
+## Common Commands
+
+### Root Level
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Export static files
-npm run export
-
-# Run tests
-npm run test
-
-# Run linting
-npm run lint
-
-# Type checking
-npm run type-check
+npm install                    # Install all dependencies
+npm run dev                   # Start all development servers
+npm run build                 # Build all packages
+npm run test                  # Run tests for all packages
+npm run lint                  # Lint all packages
+npm run format                # Format code with Prettier
+npm run deploy                # Deploy infrastructure
+npm run destroy               # Destroy AWS resources
 ```
 
-### Infrastructure Commands
+### Frontend Development
 ```bash
-# Deploy all infrastructure stacks
-npm run deploy:infrastructure
-
-# Deploy to development environment
-npm run deploy:dev
-
-# Deploy to production
-npm run deploy:prod
-
-# Destroy infrastructure (cleanup)
-npm run destroy:infrastructure
+cd packages/frontend
+npm run dev                   # Start Vite dev server
+npm run build                 # Build for production (tsc + vite build)
+npm run preview               # Preview production build
+npm run test                  # Run Vitest tests
+npm run test:ui               # Run tests with UI
+npm run lint                  # ESLint with TypeScript rules
 ```
 
-### Content Management Commands
+### Infrastructure Development
 ```bash
-# Start admin interface locally
-npm run admin:dev
-
-# Build admin interface
-npm run admin:build
-
-# Sync content from GitHub
-npm run content:sync
-
-# Validate content structure
-npm run content:validate
+cd packages/infrastructure
+npm run build                 # Compile TypeScript
+npm run watch                 # Watch mode compilation
+npm run synth                 # Synthesize CloudFormation templates
+npm run bootstrap             # Bootstrap CDK (first time only)
+npm run deploy                # Deploy to AWS
+npm run destroy               # Destroy AWS resources
+npm run diff                  # Show deployment diff
+npm run test                  # Run Jest tests
 ```
 
-### Deployment Pipeline
-- **GitHub Actions** for automated CI/CD
-- **Automatic deployment** on push to main branch (production) or develop branch (staging)
-- **Build validation** with tests and linting before deployment
-- **CloudFront cache invalidation** after successful deployment
+## Code Quality Tools
 
-## Architecture Patterns
-
-### Static Site Generation (SSG)
-- Pre-built pages for optimal performance
-- Dynamic content through build-time data fetching
-- Incremental Static Regeneration (ISR) for content updates
-
-### Serverless Architecture
-- Lambda functions for admin operations
-- API Gateway for REST endpoints
-- No persistent servers to manage
-
-### Content-First Architecture
-- Markdown-based content storage
-- Git as the single source of truth
-- Automatic content validation and type safety
-
-## Migration Path (Future Phases)
-
-### Phase 3+ Technology Additions
-- **Strapi CMS** for advanced content management (~$30-40/month)
-- **DynamoDB** for user accounts and subscriptions
-- **Cognito** for user authentication and authorization
-- **Stripe API** for payment processing
-
-### Phase 6+ AI Integration
-- **OpenAI API** for chatbot functionality
-- **Pinecone/Weaviate** for vector database (RAG)
-- **Lambda** for AI processing functions
-
-## Performance Standards
-- **Page load time**: Under 3 seconds globally
-- **Core Web Vitals**: Green scores for LCP, FID, CLS
-- **Mobile performance**: 90+ Lighthouse score
-- **SEO optimization**: Proper meta tags, sitemap, structured data
+- **ESLint**: TypeScript, React, and React Hooks rules
+- **Prettier**: Code formatting with consistent style
+- **TypeScript**: Strict type checking enabled
